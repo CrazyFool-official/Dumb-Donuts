@@ -1,0 +1,30 @@
+1) Create the smart contract (such as the DumbDonuts.sol)
+2) Add dependencies (yarn add all)
+yarn add atomize react-transition-group
+3) Go to terminal and type ganache-cli
+4) Set up test network on metamask and copy one of the private keys in the terminal. import the private key into metamask
+5) truffle migrate --reset || truffle test
+6) test by running yarn start || control c
+
+git init
+git remote add origin ...
+git status
+
+
+
+
+
+
+
+git push origin HEAD:master
+
+
+$ git add .
+$ git status // to see what changes are going to be commited
+$ git commit -m 'Some descriptive commit message'
+$ git push origin master
+
+$ git checkout gh-pages // go to the gh-pages branch
+$ git rebase master // bring gh-pages up to date with master
+$ git push origin gh-pages // commit the changes
+$ git checkout master // return to the master branch
