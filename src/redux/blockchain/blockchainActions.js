@@ -46,12 +46,12 @@ export const connect = () => {
           method: "net_version",
         });
         //const NetworkData = await DumbDonuts.networks[networkId];
-        if (networkId == 4) {
+        if (networkId == 137) {
           const SmartContractObj = new web3.eth.Contract(
             DumbDonuts.abi,
             //NetworkData.address
             // matic 137 | contract address
-            "0xdc7b457bf772eae15d162d294a06192ecee3c081"
+            "0xED1Fee7Bd36D288995147EFF25C9de55B8C47F49"
           );
           dispatch(
             connectSuccess({
