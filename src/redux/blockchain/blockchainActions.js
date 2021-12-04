@@ -34,13 +34,15 @@ const updateAccountRequest = (payload) => {
 export const connect = () => {
   return async (dispatch) => {
     dispatch(connectRequest());
-    if (window.ethereum) {
+    const { ethereum } = window;
+    const metamaskIsInstalled = ethereum && ethereum.isMetaMask;
+    if (metamaskIsInstalled) {
       let web3 = new Web3(window.ethereum);
       try {
-        const accounts = await window.ethereum.request({
+        const accounts = await ethereum.request({
           method: "eth_requestAccounts",
         });
-        const networkId = await window.ethereum.request({
+        const networkId = await ethereum.request({
           method: "net_version",
         });
         //const NetworkData = await DumbDonuts.networks[networkId];
@@ -48,7 +50,8 @@ export const connect = () => {
           const SmartContractObj = new web3.eth.Contract(
             DumbDonuts.abi,
             //NetworkData.address
-            "0x48d3f35228e2387dd97d07d7fb53f51d59c4d4ca"
+            // matic 137 | contract address
+            "0xdc7b457bf772eae15d162d294a06192ecee3c081"
           );
           dispatch(
             connectSuccess({
@@ -58,15 +61,15 @@ export const connect = () => {
             })
           );
           // Add listeners start
-          window.ethereum.on("accountsChanged", (accounts) => {
+          ethereum.on("accountsChanged", (accounts) => {
             dispatch(updateAccount(accounts[0]));
           });
-          window.ethereum.on("chainChanged", () => {
+          ethereum.on("chainChanged", () => {
             window.location.reload();
           });
           // Add listeners end
         } else {
-          dispatch(connectFailed("Connection error. Refresh or connect to Ethereum Mainnet and try again."));
+          dispatch(connectFailed("Connection error. Refresh or connect to Polygon and try again."));
         }
       } catch (err) {
         dispatch(connectFailed("Something went wrong."));

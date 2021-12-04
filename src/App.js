@@ -39,7 +39,7 @@ function App() {
     setMintingNFT(true);
     blockchain.dumbDonuts.methods.mint(blockchain.account, _amount).send({
       from: blockchain.account,
-      value: blockchain.web3.utils.toWei((0.01 * _amount).toString(), "ether"),
+      value: blockchain.web3.utils.toWei((20 * _amount).toString(), "ether"),
     })
     .once("error", (err) => {
       console.log(err);
@@ -158,7 +158,7 @@ function App() {
                   shadow="3"
                   hoverShadow="4"
                   rounded="circle"
-                  m={{ b: "80px" }}
+                  m={{ b: "40px" }}
                   disabled={mintingNFT ? 1 : 0}
                   onClick={(e) => {
                     e.preventDefault();
@@ -170,7 +170,7 @@ function App() {
               <Anchor href="https://www.google.com" target="_blank">
                 <Button
                   align="center"
-                  m={{ b: "80px" }}
+                  m={{ b: "40px" }}
                   hoverBg="info400"
                   bg="info600"
                   shadow="3"
@@ -180,6 +180,9 @@ function App() {
                 View on OpenSea
                 </Button>
               </Anchor>}
+              <Text>**Please ensure that you are connected to the Polygon
+            Mainnet and the correct address. Note that once you make the
+            purchase, you cannot undo it.</Text>
             </Div>
           )
           }
