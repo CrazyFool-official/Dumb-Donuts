@@ -110,7 +110,7 @@ function App() {
               <Header />
               <GIF />
               <Description />
-              <Text textSize="title" textWeight="500" m={{ b: "40px" }}>{data.totalSupply}  /  10,000 minted</Text>
+              <Text textSize="title" textWeight="600" m={{ b: "40px" }}>{data.totalSupply}  /  10,000 minted</Text>
               <Div d="flex" align="center" justify="center" m={{ b: "40px" }}>
                     
                 <Button 
