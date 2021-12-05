@@ -46,7 +46,7 @@ function App() {
     })
     .once("error", (err) => {
       console.log(err);
-      alert("Error");
+      alert("Error. Please check if the transaction got stuck.");
       setMintingNFT(false);
     })
     .then((receipt) => {
