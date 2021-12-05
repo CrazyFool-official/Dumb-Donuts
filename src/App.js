@@ -39,7 +39,7 @@ function App() {
     setMintingNFT(true);
     blockchain.dumbDonuts.methods.mint(blockchain.account, _amount).send({
       from: blockchain.account,
-      value: blockchain.web3.utils.toWei((10 * _amount).toString(), "ether"),
+      value: blockchain.web3.utils.toWei((0.05 * _amount).toString(), "ether"),
     })
     .once("error", (err) => {
       console.log(err);
