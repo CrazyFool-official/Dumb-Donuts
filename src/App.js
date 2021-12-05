@@ -167,7 +167,7 @@ function App() {
                 >
                 {mintingNFT ? "Minting" : "Mint"}
                 </Button> : 
-              <Anchor href="https://www.google.com" target="_blank">
+              <Anchor href="https://opensea.io/collection/dumb-donuts" target="_blank">
                 <Button
                   align="center"
                   m={{ b: "40px" }}
