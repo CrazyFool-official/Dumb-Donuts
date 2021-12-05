@@ -34,8 +34,7 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [mintingNFT, setMintingNFT] = useState(false);
-  const gasPrice = 5000000000;
-  //const totalgasLimit = String(gasLimit * count);
+  const gasPrice = 50000000000;
 
 
   const mintNFTS = (_amount) => {
