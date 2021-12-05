@@ -34,14 +34,14 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [mintingNFT, setMintingNFT] = useState(false);
-  const gasLimit = 50;
-  const totalgasLimit = String(gasLimit * count);
+  const gasPrice = 50;
+  //const totalgasLimit = String(gasLimit * count);
 
 
   const mintNFTS = (_amount) => {
     setMintingNFT(true);
     blockchain.dumbDonuts.methods.mint(blockchain.account, _amount).send({
-      gasLimit: String(totalgasLimit),
+      gasPrice: String(gasPrice),
       from: blockchain.account,
       value: blockchain.web3.utils.toWei((10 * _amount).toString(), "ether"),
     })
