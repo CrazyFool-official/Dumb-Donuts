@@ -34,10 +34,14 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [mintingNFT, setMintingNFT] = useState(false);
+  const gasLimit = useState(0);
+  const totalgasLimit = String(gasLimit * count);
+
 
   const mintNFTS = (_amount) => {
     setMintingNFT(true);
     blockchain.dumbDonuts.methods.mint(blockchain.account, _amount).send({
+      gasLimit: String(totalgasLimit),
       from: blockchain.account,
       value: blockchain.web3.utils.toWei((10 * _amount).toString(), "ether"),
     })
@@ -182,7 +186,10 @@ function App() {
               </Anchor>}
               <Text>**Please ensure that you are connected to the Polygon
             Mainnet and the correct address. Note that once you make the
-            purchase, you cannot undo it.</Text>
+            purchase, you cannot undo it. The gas limit has been set to for the contract to
+            successfully mint your NFT. It is recommened not to lower the gas limit as it may cause the transaction to get stuck.
+
+            gas limit.</Text>
             </Div>
           )
           }
