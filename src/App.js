@@ -184,12 +184,12 @@ function App() {
                 View on OpenSea
                 </Button>
               </Anchor>}
-              <Text>**Please ensure that you are connected to the Polygon
-            Mainnet and the correct address. Note that once you make the
-            purchase, you cannot undo it. The gas limit has been set to for the contract to
-            successfully mint your NFT. It is recommened not to lower the gas limit as it may cause the transaction to get stuck.
-
-            gas limit.</Text>
+              <Div>
+                <Text>**Please ensure that you are connected to the Polygon Mainnet and the correct address. Note that once you make the
+              purchase, you cannot undo it. <br></br>
+              **The gas limit has been set to 50 GWEI to successfully mint your NFT. It is recommened not to lower the gas limit as it may cause the transaction to get stuck.
+                </Text>
+                  </Div>
             </Div>
           )
           }
