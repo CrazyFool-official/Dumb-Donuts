@@ -188,7 +188,7 @@ function App() {
                 <Text>**Please ensure that you are connected to the Polygon Mainnet and the correct address. Note that once you make the
               purchase, you cannot undo it. <br></br>
               **The gas limit has been set to 50 GWEI to successfully mint your NFT. It is recommened not to lower the gas limit as it may cause the transaction to <br></br>
-              get stuck. For current gas prices, click <Anchor href="https://polygonscan.com/gastracker" target="_blank" d="block">here</Anchor>
+              get stuck. For current gas prices, click <Anchor href="https://polygonscan.com/gastracker" target="_blank" d="flex">here</Anchor>.
                 </Text>
                   </Div>
             </Div>
