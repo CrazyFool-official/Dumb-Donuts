@@ -19,6 +19,8 @@ class GIF extends React.Component {
                 w="800px"
                 align="center"
                 textAlign="center"
+                border="1px solid"
+                borderColor="black"
             >
                 <Col d="flex" flexDir="row" textAlign="center">
                     <Image src={gif1} rounded="xl" m={{ r: "50px" }} />
