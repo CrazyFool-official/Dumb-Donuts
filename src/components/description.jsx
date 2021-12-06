@@ -9,6 +9,7 @@ class Description extends React.Component {
         return (
             <Div
                 m={{ b: "40px" }}
+                w="100px"
             >
                     <Text>
                     Dumb Donuts is a collection of NFTs (unique digital collectibles) based on the works of CryptoPunks and Weird Whales.<br></br>
