@@ -103,7 +103,7 @@ function App() {
             d="flex" 
             justify="center" 
             align="center" 
-            minH="150vh" 
+            minH="120vh" 
             w="100vw" 
             flexDir="column"
             >
