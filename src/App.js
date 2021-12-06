@@ -110,7 +110,7 @@ function App() {
               <Header />
               <GIF />
               <Description />
-              <Text textSize="title" textWeight="600" m={{ b: "40px" }}>{data.totalSupply}  /  10,000 minted</Text>
+              <Text textSize="title" textWeight="500" m={{ b: "40px" }}>{data.totalSupply}  /  10,000 minted</Text>
               <Div d="flex" align="center" justify="center" m={{ b: "40px" }}>
                     
                 <Button 
@@ -132,7 +132,7 @@ function App() {
                     w="40px"
                     m={{ l: "2rem", r: "2rem" }} 
                     textSize="title" 
-                    textWeight="600" 
+                    textWeight="500" 
                     textAlign="center"
                 >
                 {count}
@@ -184,14 +184,15 @@ function App() {
                 </Button>
               </Anchor>}
               <Div m={{ b: "40px" }} w="800px">
-                <Text>**Please ensure that you are connected to the Polygon Mainnet and the correct address. Note that once you make the
+                <Text m={{ l: "6px" }}>**Please ensure that you are connected to the Polygon Mainnet and the correct address. Note that once you make the
               purchase, you cannot undo it. <br></br><br></br>
               **The gas price has been set to 30 GWEI to successfully mint an NFT. It is recommened not to lower the gas price as it may cause the transaction to get stuck. For current gas prices, click <Anchor href="https://polygonscan.com/gastracker" target="_blank" d="inline-block">here</Anchor>.
                 </Text>
               </Div>
               <Div w="800px">
-                <Text textSize="title" textWeight="500">About Crazy Fool</Text>
-                <Text>hi</Text>
+                <Text textSize="title" textWeight="500" m={{ l: "6px" }}>About Crazy Fool</Text>
+                <Text m={{ l: "6px" }}>Crazy Fool was created with the sole purpose of giving back to society, helping those in need and raising awareness of various matters in the world.
+                With that purpose in mind, 60% of all Crazy Fool collection inital sales will be donated to various organisations such as orphanages, charities and etc. Let us do our part to make the world a better place!</Text>
               </Div>
             </Div>
           )
