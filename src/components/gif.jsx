@@ -16,12 +16,14 @@ class GIF extends React.Component {
             <Div
                 d="flex"
                 m={{ b: "40px" }}
+                w="800px"
+                align="center"
             >
                 <Col d="flex" flexDir="row" textAlign="center">
                     <Image src={gif1} rounded="xl" m={{ r: "50px" }} />
                     <Image src={gif2} rounded="xl" m={{ r: "50px" }} />
                     <Image src={gif3} rounded="xl" m={{ r: "50px" }} />
-                    <Image src={gif4} rounded="xl" m={{ r: "50px" }} />
+                    <Image src={gif4} rounded="xl" />
                 </Col>
             </Div>
             )
