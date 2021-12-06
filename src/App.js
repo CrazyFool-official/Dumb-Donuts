@@ -192,7 +192,7 @@ function App() {
               <Div w="800px">
                 <Text textSize="title" textWeight="500" m={{ l: "7px" }}>About Crazy Fool</Text>
                 <Text m={{ l: "7px" }}>Crazy Fool was created with the sole purpose of giving back to society, helping those in need and raising awareness of various matters in the world.
-                With that purpose in mind, **60% of all Crazy Fool collection inital sales** will be donated to various organisations such as orphanages, charities and etc. Let us do our part to make the world a better place!</Text>
+                With that purpose in mind, <b>60% of all Crazy Fool collection inital sales</b> will be donated to various organisations such as orphanages, charities and etc. Let us do our part to make the world a better place!</Text>
               </Div>
             </Div>
           )
