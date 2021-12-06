@@ -102,7 +102,7 @@ function App() {
             <Div 
             d="flex" 
             justify="center" 
-            align="flex-start" 
+            align="center" 
             minH="150vh" 
             w="100vw" 
             flexDir="column"
