@@ -102,7 +102,7 @@ function App() {
             <Div 
             d="flex" 
             justify="center" 
-            align="center" 
+            align="flex-start" 
             minH="150vh" 
             w="100vw" 
             flexDir="column"
@@ -184,14 +184,14 @@ function App() {
                 </Button>
               </Anchor>}
               <Div m={{ b: "40px" }} w="800px">
-                <Text m={{ l: "6px" }}>**Please ensure that you are connected to the Polygon Mainnet and the correct address. Note that once you make the
+                <Text m={{ l: "7px" }}>**Please ensure that you are connected to the Polygon Mainnet and the correct address. Note that once you make the
               purchase, you cannot undo it. <br></br><br></br>
               **The gas price has been set to 30 GWEI to successfully mint an NFT. It is recommened not to lower the gas price as it may cause the transaction to get stuck. For current gas prices, click <Anchor href="https://polygonscan.com/gastracker" target="_blank" d="inline-block">here</Anchor>.
                 </Text>
               </Div>
               <Div w="800px">
-                <Text textSize="title" textWeight="500" m={{ l: "6px" }}>About Crazy Fool</Text>
-                <Text m={{ l: "6px" }}>Crazy Fool was created with the sole purpose of giving back to society, helping those in need and raising awareness of various matters in the world.
+                <Text textSize="title" textWeight="500" m={{ l: "7px" }}>About Crazy Fool</Text>
+                <Text m={{ l: "7px" }}>Crazy Fool was created with the sole purpose of giving back to society, helping those in need and raising awareness of various matters in the world.
                 With that purpose in mind, **60% of all Crazy Fool collection inital sales** will be donated to various organisations such as orphanages, charities and etc. Let us do our part to make the world a better place!</Text>
               </Div>
             </Div>
