@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Div} from "atomize";
+import { Text, Div, Anchor} from "atomize";
 
 
 class Description extends React.Component {
