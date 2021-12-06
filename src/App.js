@@ -75,7 +75,7 @@ function App() {
             d="flex" 
             justify="center" 
             align="center" 
-            minH="150vh" 
+            minH="100vh" 
             w="100vw" 
             flexDir="column"
             >
@@ -103,7 +103,7 @@ function App() {
             d="flex" 
             justify="center" 
             align="center" 
-            minH="100vh" 
+            minH="150vh" 
             w="100vw" 
             flexDir="column"
             >
