@@ -34,7 +34,7 @@ function App() {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [mintingNFT, setMintingNFT] = useState(false);
-  const totalgasPrice = String(30000000000 * count);
+  const totalgasPrice = String(50000000000 * count);
 
 
   const mintNFTS = (_amount) => {
@@ -186,7 +186,7 @@ function App() {
               <Div m={{ b: "40px" }} w="800px">
                 <Text m={{ l: "7px" }}>**Please ensure that you are connected to the Polygon Mainnet and the correct address. Note that once you make the
               purchase, you cannot undo it. <br></br><br></br>
-              **The gas price has been set to 30 GWEI to successfully mint an NFT. It is recommened not to lower the gas price as it may cause the transaction to get stuck. For current gas prices, click <Anchor href="https://polygonscan.com/gastracker" target="_blank" d="inline-block">here</Anchor>.
+              **The gas price has been set to 50 GWEI to successfully mint an NFT. It is recommened not to lower the gas price as it may cause the transaction to get stuck. If you choose to do so, please do so at your own risk. For current gas prices, click <Anchor href="https://polygonscan.com/gastracker" target="_blank" d="inline-block">here</Anchor>.
                 </Text>
               </Div>
               <Div w="800px">
