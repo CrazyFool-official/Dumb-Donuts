@@ -42,7 +42,7 @@ function App() {
     blockchain.dumbDonuts.methods.mint(blockchain.account, _amount).send({
       gasPrice: String(totalgasPrice),
       from: blockchain.account,
-      value: blockchain.web3.utils.toWei((10 * _amount).toString(), "ether"),
+      value: blockchain.web3.utils.toWei((0 * _amount).toString(), "ether"),
     })
     .once("error", (err) => {
       console.log(err);
@@ -191,8 +191,7 @@ function App() {
               </Div>
               <Div w="800px">
                 <Text textSize="title" textWeight="500" m={{ l: "7px" }}>About Crazy Fool</Text>
-                <Text m={{ l: "7px" }}>Crazy Fool was created with the sole purpose of giving back to society, helping those in need and raising awareness of various matters in the world.
-                With that purpose in mind, <b>60% of all Crazy Fool collection inital sales</b> will be donated to various organisations such as orphanages, charities and etc. Let us do our part to make the world a better place!</Text>
+                <Text m={{ l: "7px" }}>Crazy Fool is an aspiring developer and blochain enthusiast. Dumb Donuts is the very first collection created by the Crazy Fool and it won't be the last. Crazy Fool hopes to release more NFT collections and possibly even a game. Be a Crazy Fool today!</Text>
               </Div>
             </Div>
           )
