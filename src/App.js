@@ -191,7 +191,7 @@ function App() {
               </Div>
               <Div w="800px">
                 <Text textSize="title" textWeight="500" m={{ l: "7px" }}>About Crazy Fool</Text>
-                <Text m={{ l: "7px" }}>Crazy Fool is an aspiring developer and blochain enthusiast. Dumb Donuts is the very first collection created by the Crazy Fool and it won't be the last. Crazy Fool hopes to release more NFT collections and possibly even a game. Be a Crazy Fool today!</Text>
+                <Text m={{ l: "7px" }}>Crazy Fool is an aspiring developer and blockchain enthusiast. Dumb Donuts is the very first collection created by the Crazy Fool and it won't be the last. Crazy Fool hopes to release more NFT collections and possibly even a game. Be a Crazy Fool today!</Text>
               </Div>
             </Div>
           )
